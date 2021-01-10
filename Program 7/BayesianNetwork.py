@@ -33,4 +33,4 @@ HeartDisease_infer = VariableElimination(model)
 
 print("\n1. Probability of HeartDisease given Age=20")
 q = HeartDisease_infer.query(variables=["heartdisease"], evidence={'age': 20})
-print(q['heartdisease'])
+print(q)
